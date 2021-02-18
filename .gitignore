@@ -109,3 +109,6 @@ dist
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
+
+# TypeScript Map Files
+*.map
