@@ -1,8 +1,8 @@
-import express from "express"
+import express, { IRoute } from "express"
 
 const get = express.Router()
 get.get('/currentTime', (req, res) => {
-    res.send(Date.now())
+  res.send(`${new Date()}`)
 })
 
 const api = express.Router()

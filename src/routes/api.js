@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
 var get = express_1.default.Router();
 get.get('/currentTime', function (req, res) {
-    res.send(Date.now());
+    res.send("" + new Date());
 });
 var api = express_1.default.Router();
 api.use('/get/', get);
