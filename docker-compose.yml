@@ -1,0 +1,9 @@
+services:
+  app:
+    image: node:14-alpine
+    command: sh -c "yarn install --frozen-lockfile && yarn develop"
+    ports:
+      - 8080:8080
+    working_dir: /app
+    volumes:
+      - ./:/app
